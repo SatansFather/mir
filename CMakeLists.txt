@@ -65,3 +65,5 @@ target_link_libraries(mir_shared PRIVATE mir)
 add_executable (c2m "c2mir/c2mir-driver.c")
 target_include_directories(c2m PRIVATE ${PROJECT_SOURCE_DIR})
 target_link_libraries(c2m mir ${CMAKE_DL_LIBS} )
+
+set(MIR_INCLUDE ${CMAKE_CURRENT_SOURCE_DIR} CACHE PATH "mir include" FORCE)
